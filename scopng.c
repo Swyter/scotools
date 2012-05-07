@@ -27,8 +27,12 @@ int main(int argc, char **argv)
 {
 	if(argc < 2)
 	{
+		//get the app name
+		char *exec = strrchr(argv[0], '\\');
+		if(!exec) exec=argv[0]; else exec+=1;
+		
 		printf("\n | SceneOBJ -> PNG Heightmap -- By Swyter\n | Based on the work of Disgrntld and cmpxchg8b.\n\n");
-		printf( ">>   Usage: %s <input SCO filename> <optional output filename in PNG, TGA or BMP>\n\n", argv[0]);
+		printf( ">>   Usage: %s <input SCO filename> <optional output filename in PNG, TGA or BMP>\n\n", exec);
 		system("pause");
 		return EXIT_FAILURE;
     }
@@ -109,7 +113,7 @@ int save_heightmap_as_png(char *out, sco_file_t *src)
 	
 	int count = 0;
 	int gol;
-	for(gol = 0; gol < src->ground_paint->num_layers; ++gol)
+	for(gol = 0; gol <= src->ground_paint->num_layers; ++gol)
 	{
 		printf("\n\nlayer %d\n spec_id[%s] continuity_count[%d]\n",gol,src->ground_paint->layers[gol].ground_spec_id,src->ground_paint->layers[gol].continuity_count);
 		if( src->ground_paint->layers[gol].ground_spec_no == GROUND_PAINT_ELEVATION_MAGIC/*GROUND_PAINT_LEVELING_MAGIC*/  && src->ground_paint->layers[gol].cells){

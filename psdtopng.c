@@ -22,8 +22,12 @@ int main(int argc, char **argv)
 {
     if(argc < 2)
     {
+		//get the app name
+		char *exec = strrchr(argv[0], '\\');
+		if(!exec) exec=argv[0]; else exec+=1;
+	
         printf("PSD, GIF, JPG, TGA, PIC -> PNG -- By Swyter\n");
-        printf("Usage: %s <input filename> <optional output filename>\n", argv[0]);
+        printf("Usage: %s <input filename> <optional output filename>\n", exec);
         system("pause");
         return EXIT_FAILURE;
     }
