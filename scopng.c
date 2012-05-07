@@ -11,7 +11,7 @@
 #include <string.h>
 #include <ctype.h>
 
-#include "../scoUtils/sco.h"
+#include "scoUtils/sco.h"
 
 #define STB_IMAGE_WRITE_IMPLEMENTATION
 #include "stb_image_write.h"

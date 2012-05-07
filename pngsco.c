@@ -11,7 +11,7 @@
 #include <string.h>
 #include <ctype.h>
 
-#include "../scoUtils/sco.h"
+#include "scoUtils/sco.h"
 
 #define STBI_NO_HDR
 #define STBI_NO_FAILURE_STRINGS

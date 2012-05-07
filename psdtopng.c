@@ -9,7 +9,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-//#include "../scoUtils/sco.h"
+//#include "scoUtils/sco.h"
 
 #define STBI_NO_HDR
 #define STBI_NO_FAILURE_STRINGS
