@@ -41,8 +41,12 @@ int main(int argc, char **argv)
 
 	if(argc == 1)
 	{
+		//get the app name
+		char *exec = strrchr(argv[0], '\\');
+		if(!exec) exec=argv[0]; else exec+=1;
+		
 		printf("\n | PNG Heightmap -> SceneOBJ  -- By Swyter\n | Based on the work of Disgrntld and cmpxchg8b.\n\n");
-		printf( ">>   Usage: %s <input SceneOBJ> <input PNG, PSD, TGA, BMP, JPG or GIF filename> <Optional SCO output>\n     A backup is recommended... Both input files need to have the very same dimensions, otherwise there'll be distorsions\n", argv[0]);
+		printf( ">>   Usage: %s <input SceneOBJ> <input PNG, PSD, TGA, BMP, JPG or GIF filename> <Optional SCO output>\n     A backup is recommended... Both input files need to have the very same dimensions, otherwise there'll be distorsions\n", exec);
 		system("pause");
 		return EXIT_FAILURE;
 	
