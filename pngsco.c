@@ -171,7 +171,7 @@ int save_heightmap_as_sco(char *img, sco_file_t *src)
        _ (per X of every Y)
      |  |
         | ->CONTINUITY_COUNT (X * SIZY + Y)
-     |    | ->CELLS (X * SIZY + Y)
+     |  | ->CELLS (X * SIZY + Y)
         V
      |
 */
