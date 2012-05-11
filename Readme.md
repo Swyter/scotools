@@ -9,7 +9,7 @@
     
    
   Tell me more
-  ===============
+  ---------------
   
   Me, a modder guy called Swyter made these small apps that wrap around all the
   complexity of the scoUtils lib. Use this to convert back and forth between 
@@ -17,19 +17,19 @@
   
   
   This app supports a good bunch of commonly used file types, like:
-  *PNG (8-bit)
-  *TGA 
-  *BMP
-  *JPG(not recommended)
+  * PNG (8-bit)
+  * TGA 
+  * BMP
+  * JPG(not recommended)
   
   
   Also imports in:
-  *PSD
-  *...
+  * PSD
+  * ...
   
   
   How to use them
-  ==================
+  ------------------
   
   Well, just use the compiled programs and drop over the SCO file, it will do
   all the hard stuff for you. Detecting the file, loading it and exporting it
@@ -37,7 +37,7 @@
   
   
   Credit and Acknoledgements
-  =============================
+  -----------------------------
   I would like to thank cmpxchg8b for the original doc and implementation.
   Disgrntld packed it into a header and sparkled the interest on this.
   
