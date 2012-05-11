@@ -36,7 +36,7 @@
   into a cute image in the same folder, with a similar nomemclature.
   
   
-  Credit and Acknoledgements
+  Credits and Acknowledgements
   -----------------------------
   I would like to thank cmpxchg8b for the original doc and implementation.
   Disgrntld packed it into a header and sparkled the interest on this.
